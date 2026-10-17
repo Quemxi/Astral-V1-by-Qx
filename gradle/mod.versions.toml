@@ -1,0 +1,6 @@
+[versions]
+id = "astral"
+name = "Astral"
+version = "0.1.0"
+group = "foo.starred"
+tweaker = "astral.accesswidener"

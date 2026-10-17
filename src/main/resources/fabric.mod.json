@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "Astral: a Hypixel SkyBlock quality-of-life mod with a built-in performance HUD.",
+  "authors": [
+    "Astral"
+  ],
+  "contact": {},
+  "license": "BSD 3-Clause",
+  "icon": "assets/astral/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "value": "foo.starred.athen.Athen",
+        "adapter": "kotlin"
+      }
+    ],
+    "modmenu": [
+      {
+        "value": "foo.starred.athen.compat.modmenu.ModMenuCompatibility",
+        "adapter": "kotlin"
+      }
+    ]
+  },
+  "mixins": [
+    "${id}.mixins.json"
+  ],
+  "accessWidener": "${tweaker}",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=1.13.13+kotlin.2.4.10",
+    "minecraft": "${minecraft}"
+  },
+  "custom": {
+    "modmenu": {
+      "update_checker": false
+    }
+  }
+}
